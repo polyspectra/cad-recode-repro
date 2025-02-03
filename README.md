@@ -1,4 +1,5 @@
 An attempt to reproduce "CAD Recode"
+- [arXiv Paper](https://arxiv.org/abs/2412.14042)
 - [GitHub Repository](https://github.com/filaPro/cad-recode/)
 - [Dataset on Hugging Face](https://huggingface.co/datasets/filapro/cad-recode)
 - [Model on Hugging Face](https://huggingface.co/filapro/cad-recode)
