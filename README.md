@@ -29,21 +29,23 @@ An attempt to reproduce "CAD Recode"
 
 4. Install required packages:
    ```bash
-   pip install datasets ipykernel huggingface-cli
+   pip install -r requirements.txt
    ```
 
-5. Set up Jupyter kernel:
+> **Note**: Apple Silicon (M1/M2/M3) users may encounter issues with OpenCascade and VTK dependencies. This is a known limitation when working with CadQuery on ARM-based Macs. Consider using an x86 machine or a cloud environment for development.
+
+1. Set up Jupyter kernel:
    ```bash
    python -m ipykernel install --user --name=recode --display-name="ReCode"
    ```
 
-6. Login to Hugging Face (recommended for better download rates):
+2. Login to Hugging Face (recommended for better download rates):
    ```bash
    huggingface-cli login
    # You'll need a token from: https://huggingface.co/settings/tokens
    ```
 
-7. Download the dataset:
+3. Download the dataset:
    ```bash
    # Create datasets directory (it's gitignored)
    mkdir datasets
@@ -52,7 +54,7 @@ An attempt to reproduce "CAD Recode"
    huggingface-cli download --repo-type dataset filapro/cad-recode --local-dir datasets/cad-recode
    ```
 
-8. Open Jupyter notebook and select the "ReCode" kernel
+4. Open Jupyter notebook and select the "ReCode" kernel
 
 ## Development
 
