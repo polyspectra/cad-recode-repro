@@ -1,7 +1,8 @@
 # Core dependencies
 datasets
-huggingface-cli
+huggingface_hub
 trimesh
+modal
 
 # CadQuery from specific commit
 git+https://github.com/CadQuery/cadquery.git@e99a15df3cf6a88b69101c405326305b5db8ed94 
